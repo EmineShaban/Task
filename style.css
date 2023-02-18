@@ -6,7 +6,11 @@
       --clr--gray: rgb(96, 95, 95);
       --clr--violet: rgb(229, 209, 250);
       --clr--blue: rgb(186, 148, 209);
-      --clr--darkViolet: rgb(127, 102, 157)
+      --clr--darkViolet: rgb(127, 102, 157);
+      --clr--pink: rgb(222, 186, 206);
+      --clr--darkPink: rgb(213, 157, 188);
+      --clr--darkPink2: rgb(208, 137, 176);
+
   }
 
   body {
@@ -62,13 +66,11 @@
 
 
 
-
-  .section1 div.description {
+  .section1 .description {
       display: flex;
-      /* justify-content: center; */
       gap: 25px;
       padding: 15px 15px;
-      margin: 40px 40px;
+      margin: 0 40px;
   }
 
   .section1 div.slide .img {
@@ -83,7 +85,7 @@
 
   .section1 div.description div.slide {
       position: relative;
-      padding: 10px 70px;
+      padding: 10px 60px;
   }
 
   .section1 div.description div.slide .img {
@@ -158,28 +160,74 @@
 
   }
 
+  /* order form */
+  .section1 .orderForm {
+      position: relative;
 
-  .section1 div.description1 button.order {
+
+      /*       
+      width: 100%;
+      height: 250px; */
+  }
+
+  .addSize {
+      width: 100%;
+      height: 250px;
+  }
+
+  .section1 button.order {
       font-weight: 900;
-      background-color: var(--clr--violet);
+      background-color: var(--clr--pink);
       border: none;
       padding: 15px 35px;
+      margin-top: 20px;
+      margin-bottom: 20px;
 
       border-top-left-radius: 25px;
       border-bottom-right-radius: 25px;
-      margin-top: 20px;
-      /* position: absolute;
-      top: 100%;
+      position: absolute;
       left: 50%;
-      transform: translate(-50%, -50%); */
+      transform: translate(-50%, -100%);
+      border: var(--clr--darkPink) solid;
   }
 
-  .section1 div.description1 button.order:hover {
+  /* .section1 div.description1 button.order:hover {
       box-shadow: 10px 8px 17px 5px rgb(212, 186, 240);
 
 
+  } */
+  .section1 .form {
+      background-color: var(--clr--pink);
+      border: var(--clr--darkPink) solid;
+      width: 300px;
+      text-align: right;
+      padding: 10px;
+      margin-top: 23px;
+      position: absolute;
+      left: 50%;
+      transform: translate(-50%, 0%);
+      border-radius: 10px;
+
+      display: none;
   }
 
+  .section1 .form div {
+      margin: 13px;
+  }
+
+  .section1 .form div input {
+      padding: 5px 10px;
+  }
+
+  .section1 .form button {
+      padding: 5px 16px;
+      font-size: 14px;
+      background-color: var(--clr--darkPink);
+      border: solid var(--clr--darkPink2);
+      border-top-left-radius: 20px;
+      border-bottom-right-radius: 20px;
+
+  }
 
 
 
@@ -189,8 +237,8 @@
   .section2 .information {
 
       width: 80%;
-      margin: 0 10%;
       padding-top: 30px;
+      margin: 30px 10% 0 10%;
 
       text-align: center;
       display: grid;
@@ -235,8 +283,8 @@
 
   .section2 .information2 p.class1,
   .click {
-padding-bottom: 25px;
-    margin-top: 0;
+      padding-bottom: 25px;
+      margin-top: 0;
       display: inline;
       font-size: 19px;
   }
@@ -245,6 +293,71 @@ padding-bottom: 25px;
 
       background-color: var(--clr--lightViolet);
       width: 79.2%;
-      margin: 0 10%;
+      margin: 0 10% 10% 10%;
 
+  }
+
+
+
+  /* footer */
+  footer {
+      position: fixed;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      text-align: center;
+  }
+
+  footer p.footer {
+      margin-bottom: 0;
+      background-color: var(--clr--lightViolet);
+      padding: 6px;
+
+  }
+
+
+
+  @media screen and (max-width: 813px) {
+
+      .section1 div.description {
+          display: inline-block;
+          margin: 0 0;
+
+      }
+
+      .section1 div.description div.slide {
+          padding: 10px 40px;
+
+      }
+
+      .section1 .description div.description1 {
+          margin-left: 60px;
+          width: 100%;
+      }
+
+      .section1 form.form {
+          margin-top: 23px;
+          width: 36%;
+      }
+
+      .section1 div.addSize {
+          height: 300px;
+      }
+  }
+
+  @media screen and (max-width: 500px) {
+
+      .section1 form.form {
+          font-size: 15px;
+          width: 50%;
+
+      }
+
+      .section1 .form div input {
+          padding: 5px 5px;
+      }
+
+      .section2 .information button{
+        font-size: 15px;
+      }
   }

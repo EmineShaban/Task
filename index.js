@@ -27,11 +27,6 @@ function onClick(n){
     let p2 = document.getElementById('class2')
     let p3 = document.getElementById('class3')
 
-    console.log(n)
-    console.log(p1)
-    // console.log(p2)
-    // console.log(p3)
-
     if(n == 2){
         p1.style.display = 'none'
         p1.className = p3.className.replace(" click", "");
@@ -61,6 +56,19 @@ function onClick(n){
 
         p1.style.display = 'inline'
         p1.className += ' click'
- 
+
+    }
+}
+
+function onShow(){
+    let form = document.getElementById('form')
+    let div = document.getElementById('orderForm')
+
+    if(form.style.display == '' || form.style.display == 'none'){
+        form.style.display = 'inline'
+        div.className += ' addSize'
+    }else{
+        form.style.display = 'none'
+        div.className = div.className.replace(" addSize", "");
     }
 }
