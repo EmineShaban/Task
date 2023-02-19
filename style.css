@@ -189,13 +189,16 @@
       left: 50%;
       transform: translate(-50%, -100%);
       border: var(--clr--darkPink) solid;
+      cursor: pointer;
   }
 
-  /* .section1 div.description1 button.order:hover {
-      box-shadow: 10px 8px 17px 5px rgb(212, 186, 240);
+  .section1 button.order:hover {
+      /* box-shadow: 10px 8px 17px 5px rgb(212, 186, 240); */
+        box-shadow: rgb(0 0 0 / 16%) 0px 3px 6px, rgb(0 0 0 / 23%) 0px 3px 6px;
 
+        
 
-  } */
+  }
   .section1 .form {
       background-color: var(--clr--pink);
       border: var(--clr--darkPink) solid;
@@ -226,7 +229,7 @@
       border: solid var(--clr--darkPink2);
       border-top-left-radius: 20px;
       border-bottom-right-radius: 20px;
-
+cursor: pointer;
   }
 
 
