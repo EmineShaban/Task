@@ -60,15 +60,15 @@ function onClick(n){
     }
 }
 
-function onShow(){
-    let form = document.getElementById('form')
-    let div = document.getElementById('orderForm')
+// function onShow(){
+//     let form = document.getElementById('form')
+//     let div = document.getElementById('orderForm')
 
-    if(form.style.display == '' || form.style.display == 'none'){
-        form.style.display = 'inline'
-        div.className += ' addSize'
-    }else{
-        form.style.display = 'none'
-        div.className = div.className.replace(" addSize", "");
-    }
-}
+//     if(form.style.display == '' || form.style.display == 'none'){
+//         form.style.display = 'inline'
+//         div.className += ' addSize'
+//     }else{
+//         form.style.display = 'none'
+//         div.className = div.className.replace(" addSize", "");
+//     }
+// }

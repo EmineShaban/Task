@@ -16,7 +16,7 @@
   body {
       font-family: 'Nunito', sans-serif;
       margin: 0;
-      background-color: var(--clr--back)
+      /* background-color: var(--clr--back) */
   }
 
 
@@ -24,20 +24,23 @@
   header {
       position: sticky;
       align-items: center;
+      gap: 20px;
       background-color: var(--clr--lightViolet);
       top: 0px;
       z-index: 100;
       display: flex;
-      justify-content: center;
+      justify-content: right;
+      padding: 15px 25px;
+      font-size: 20px;
+
   }
 
-  header i {
-      padding-right: 3px;
+  header a {
+      text-decoration: none;
+      color: black;
   }
 
-  header p.header {
-      margin: 5px;
-  }
+
 
 
 
@@ -64,17 +67,29 @@
   }
 
 
-
-
   .section1 .description {
-      display: flex;
-      gap: 25px;
-      padding: 15px 15px;
-      margin: 0 40px;
+      position: relative;
+      width: 100%;
+      height: 450px;
   }
 
-  .section1 div.slide .img {
+  .section1 .description .slide {
+      /* position: relative;
       width: 100%;
+      height: 300px; */
+      /* display: flex;
+      gap: 25px; */
+      /* padding: 10% 10%; */
+      /* margin: 0 40px; */
+
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+  }
+
+  .section1 .description .img {
+      width: 30%;
 
   }
 
@@ -85,20 +100,33 @@
 
   .section1 div.description div.slide {
       position: relative;
-      padding: 10px 60px;
+
   }
 
-  .section1 div.description div.slide .img {
-      display: none
+  .section1 div.description .img {
+      display: none;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
   }
 
   .section1 div.description div.slide .img:first-child {
-      display: flex
+      display: block;
+      padding: 10% 10%;
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      transform: translate(-50%, -50%);
   }
 
-  .section1 div.description div.slide .dots {
+  .section1 .dots {
       text-align: center;
       margin-top: 20px;
+      position: absolute;
+      top: 80%;
+      left: 50%;
+      transform: translate(-50%, -50%);
   }
 
   .dot {
@@ -120,8 +148,59 @@
 
 
 
+  .section1 div.list{
+    margin-top: 150px;
+  }
+  .section1 div.list h1 {
+      text-align: center;
+      margin: 25px;
+      padding: 10px;
+  }
 
-  .section1 div.description1 {
+  .section1 div.list2 {
+      display: flex;
+      padding: 30px;
+      gap: 5px;
+      width: 100%;
+      height: 500px;
+      /* position: relative; */
+
+  }
+
+  .section1 div.list2 .card {
+      position: relative;
+      width: 30%;
+      gap: 25px;
+  }
+
+  .section1 div.list2 .card:hover {
+
+      box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.75);
+  }
+
+  .section1 div.list2 .card img {
+      width: 80%;
+      position: absolute;
+      top: 40%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+  }
+
+  .section1 div.list2 .card p {
+      /* padding: 15px; */
+      width: 80%;
+      position: absolute;
+      top: 80%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+  }
+
+
+
+
+
+  /* .section1 div.description1 {
       position: relative;
   }
 
@@ -146,7 +225,7 @@
       line-height: 23px;
 
   }
-
+*/
   .section1 div.description1 .list .desc:last-child {
       margin-bottom: 40px;
   }
@@ -163,12 +242,18 @@
   /* order form */
   .section1 .orderForm {
       position: relative;
+      width: 100%;
+      height: 340px;
+      background-color: var(--clr--pink);
+
   }
 
-  .addSize {
+  /* .addSize {
       width: 100%;
-      height: 250px;
-  }
+      height: 340px;
+      background-color: var(--clr--pink);
+
+  } */
 
   .section1 button.order {
       font-weight: 900;
@@ -196,7 +281,7 @@
 
   .section1 .form {
       background-color: var(--clr--pink);
-      border: var(--clr--darkPink) solid;
+      /* border: var(--clr--darkPink) solid; */
       width: 300px;
       text-align: right;
       padding: 10px;
@@ -205,14 +290,14 @@
       left: 50%;
       transform: translate(-50%, 0%);
       border-radius: 10px;
-      display: none;
   }
 
   .section1 .form div {
       margin: 13px;
   }
 
-  .section1 .form div input {
+  .section1 .form div input,
+  .section1 .form p {
       padding: 5px 10px;
   }
 
@@ -224,6 +309,7 @@
       border-top-left-radius: 20px;
       border-bottom-right-radius: 20px;
       cursor: pointer;
+      
   }
 
 
@@ -293,16 +379,16 @@
 
   /* footer */
   footer {
-      position: fixed;
+      /* position: fixed;
       left: 0;
-      bottom: 0;
+      bottom: 0; */
       width: 100%;
       text-align: center;
   }
 
   footer p.footer {
       margin-bottom: 0;
-      background-color: var(--clr--lightViolet);
+      /* background-color: var(--clr--lightViolet); */
       padding: 6px;
 
   }
