@@ -5,33 +5,38 @@
       --clr--lightViolet: rgb(227, 223, 253);
       --clr--gray: rgb(96, 95, 95);
       --clr--violet: rgb(229, 209, 250);
-      --clr--blue: rgb(186, 148, 209);
+      --clr--blue: rgb(232, 203, 249);
       --clr--darkViolet: rgb(127, 102, 157);
       --clr--pink: rgb(222, 186, 206);
       --clr--darkPink: rgb(213, 157, 188);
       --clr--darkPink2: rgb(208, 137, 176);
+      --clr--gradient: linear-gradient(90deg, rgba(186, 148, 209, 1) 0%, rgba(213, 157, 188, 1) 62%);
 
   }
 
   body {
       font-family: 'Nunito', sans-serif;
+      width: 100%;
       margin: 0;
+      padding: 0;
       /* background-color: var(--clr--back) */
   }
 
 
   /* header */
   header {
+      /* width: 100%; */
       position: sticky;
       align-items: center;
       gap: 20px;
-      background-color: var(--clr--lightViolet);
+      background: var(--clr--gradient);
       top: 0px;
       z-index: 100;
       display: flex;
       justify-content: right;
-      padding: 15px 25px;
+      padding: 13px 25px;
       font-size: 20px;
+      margin-bottom: 30px;
 
   }
 
@@ -46,6 +51,11 @@
 
 
   /* section1 */
+  .section1 {
+      width: 100%;
+
+
+  }
 
   .section1 .aditional-info,
   .section1 .title {
@@ -55,8 +65,8 @@
   }
 
   .section1 h1.title {
-      margin-top: 30px;
-      padding-top: 20px;
+      /* margin-top: 30px; */
+      padding-top: 47px;
 
   }
 
@@ -70,18 +80,19 @@
   .section1 .description {
       position: relative;
       width: 100%;
-      height: 450px;
+      height: 400px;
   }
+/* 
+  .section1 .description img.back {
+      z-index: -10;
+      width: 20%;
+      position: absolute;
+      top: 50%;
+      left: 20%;
+      transform: translate(-50%, -50%);
+  } */
 
   .section1 .description .slide {
-      /* position: relative;
-      width: 100%;
-      height: 300px; */
-      /* display: flex;
-      gap: 25px; */
-      /* padding: 10% 10%; */
-      /* margin: 0 40px; */
-
       position: absolute;
       top: 50%;
       left: 50%;
@@ -124,7 +135,7 @@
       text-align: center;
       margin-top: 20px;
       position: absolute;
-      top: 80%;
+      top: 45%;
       left: 50%;
       transform: translate(-50%, -50%);
   }
@@ -148,28 +159,31 @@
 
 
 
-  .section1 div.list{
-    margin-top: 150px;
+  .section1 div.list {
+    padding-top: 24px;
+    margin-top: 76px;
+      /* margin-top: 150px; */
   }
+
   .section1 div.list h1 {
+      background-color: var(--clr--lightViolet);
+
       text-align: center;
-      margin: 25px;
-      padding: 10px;
+      margin: 30px 0;
+      padding: 10px 0;
   }
 
   .section1 div.list2 {
       display: flex;
-      padding: 30px;
+      padding: 20px;
       gap: 5px;
-      width: 100%;
-      height: 500px;
-      /* position: relative; */
-
+      height: 600px;
+      margin-bottom: 150px;
   }
 
   .section1 div.list2 .card {
       position: relative;
-      width: 30%;
+      width: 33%;
       gap: 25px;
   }
 
@@ -181,7 +195,7 @@
   .section1 div.list2 .card img {
       width: 80%;
       position: absolute;
-      top: 40%;
+      top: 48%;
       left: 50%;
       transform: translate(-50%, -50%);
   }
@@ -190,7 +204,7 @@
       /* padding: 15px; */
       width: 80%;
       position: absolute;
-      top: 80%;
+      top: 89%;
       left: 50%;
       transform: translate(-50%, -50%);
       text-align: center;
@@ -242,9 +256,11 @@
   /* order form */
   .section1 .orderForm {
       position: relative;
-      width: 100%;
-      height: 340px;
+      /* width: 105.5%; */
+      height: 500px;
       background-color: var(--clr--pink);
+      margin-top: 60px;
+
 
   }
 
@@ -257,7 +273,7 @@
 
   .section1 button.order {
       font-weight: 900;
-      background-color: var(--clr--pink);
+      background: var(--clr--pink);
       border: none;
       padding: 15px 35px;
       margin-top: 20px;
@@ -281,8 +297,9 @@
 
   .section1 .form {
       background-color: var(--clr--pink);
+      font-size: 30px;
       /* border: var(--clr--darkPink) solid; */
-      width: 300px;
+      width: 500px;
       text-align: right;
       padding: 10px;
       margin-top: 23px;
@@ -298,32 +315,42 @@
 
   .section1 .form div input,
   .section1 .form p {
-      padding: 5px 10px;
-  }
+    padding: 10px 20px;
+    margin: 10px;  }
 
   .section1 .form button {
-      padding: 5px 16px;
-      font-size: 14px;
-      background-color: var(--clr--darkPink);
+    padding: 10px 20px;
+    margin: 18px;
+      /* padding: 5px 16px; */
+      font-size: 20px;
+      background: var(--clr--gradient);
       border: solid var(--clr--darkPink2);
       border-top-left-radius: 20px;
       border-bottom-right-radius: 20px;
       cursor: pointer;
-      
+
   }
 
 
 
   /* section2 */
+  .section2 h1 {
+    background-color: var(--clr--lightViolet);
 
+    text-align: center;
+    margin: 60px 0 30px 0;
+    padding: 6px 0;
+}
 
   .section2 .information {
-      width: 80%;
-      padding-top: 30px;
-      margin: 30px 10% 0 10%;
+      /* background-color: var(--clr--pink); */
+      /* width: 80%; */
+      /* padding-top: 30px; */
+      margin: 0 15px;
+
       text-align: center;
       display: grid;
-      grid-template-columns: repeat(3, 33%);
+      grid-template-columns: repeat(3, 33.33%);
       grid-template-areas:
           'one two three'
 
@@ -366,12 +393,14 @@
       margin-top: 0;
       display: inline;
       font-size: 19px;
+      /* background-color: var(--clr--gradient); */
   }
 
   .section2 .information2 {
       background-color: var(--clr--lightViolet);
-      width: 79.2%;
-      margin: 0 10% 10% 10%;
+      /* width: 79.2%; */
+      /* margin: 0 10% 10% 10%; */
+      margin: 0 15px;
 
   }
 
@@ -394,7 +423,7 @@
   }
 
 
-
+  /* 
   @media screen and (max-width: 813px) {
 
       .section1 div.description {
@@ -438,4 +467,4 @@
       .section2 .information button {
           font-size: 15px;
       }
-  }
+  } */
